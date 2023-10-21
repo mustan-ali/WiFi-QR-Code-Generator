@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>WiFi QR Code Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>WiFi QR Code Generator</h1>
+        </header>
+        <div class="form">
+            <input id="ssid" type="text" spellcheck="false" placeholder="Enter SSID">
+            
+            <input id="pass" type="password" spellcheck="false" placeholder="Enter Password">
+
+            <select id="encryption">
+                <option>Encryption Method</option>
+                <option value="WEP">WEP</option>
+                <option value="WPA">WPA/WPA2</option>
+                <option value="nopass">No Password</option>
+            </select>
+
+            <select id="hidden-ssid">
+                <option>Hidden SSID</option>
+                <option value="true">Hidden</option>
+                <option value="false">Visible</option>
+            </select>
+
+            <button>Generate QR Code</button>
+
+        </div>
+        <div class="qr-code">
+            <img src="" alt="qr-code">
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
