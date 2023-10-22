@@ -26,7 +26,7 @@ body {
 }
 
 .wrapper.active {
-    height: 650px;
+    height: 700px;
 }
 
 header h1 {
@@ -64,6 +64,10 @@ header h1 {
     background: #000000;
 }
 
+#download {
+    display: none;
+}
+
 .qr-code {
     opacity: 0;
     display: flex;
@@ -87,7 +91,7 @@ header h1 {
     }
 
     .wrapper.active {
-        height: 650px;
+        height: 700px;
     }
 
     .form :where(input, button) {
